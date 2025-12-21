@@ -5,7 +5,6 @@ import threading
 from typing import Dict, Any, Generator, AsyncGenerator
 from .event_formatter import format_event_for_ui, serialize_payload_for_sse
 
-
 async def run_graph_stream(graph, initial_state: Dict[str, Any]) -> AsyncGenerator[Dict[str, Any], None]:
     """
     Execute a LangGraph graph and yield raw event dicts.
