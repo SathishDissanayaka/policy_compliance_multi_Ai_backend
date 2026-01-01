@@ -2,7 +2,7 @@
 from db.connection import get_db
 import os
 from google import genai
-
+ 
 class Retriever:
     def __init__(self):
         # Initialize client using API key from environment
