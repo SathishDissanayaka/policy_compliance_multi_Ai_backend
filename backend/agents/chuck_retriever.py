@@ -3,7 +3,7 @@ from db.connection import get_db
 import os
 from google import genai
  
-class Retriever:
+class Retriever: 
     def __init__(self):
         # Initialize client using API key from environment
         self.client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
